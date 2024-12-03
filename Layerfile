@@ -20,3 +20,6 @@ RUN ./node_modules/.bin/cypress run
 
 # start a webserver to view test results
 EXPOSE WEBSITE http://localhost:8000
+
+SECRET ENV SUPABASE_API_KEY
+RUN echo "secret is: $SUPABASE_API_KEY"
